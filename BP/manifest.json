@@ -1,0 +1,51 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Amitai"
+		]
+	},
+	"header": {
+		"name": "Gulemm",
+		"description": "Build golems upside-down.",
+		"min_engine_version": [
+			1,
+			21,
+			0
+		],
+		"uuid": "d35dddba-f015-48c6-bf94-465aa6cb0519",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "f3f2f9bf-339d-4038-b840-d04131468d04",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "7ee3af5f-a121-4e26-b5c0-6f85cce7ac79",
+			"entry": "scripts/main.js",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.11.0"
+		}
+	]
+}

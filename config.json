@@ -1,0 +1,42 @@
+{
+	"type": "minecraftBedrock",
+	"name": "Gulemm",
+	"namespace": "gul",
+	"authors": [
+		"Amitai"
+	],
+	"targetVersion": "1.21.0",
+	"description": "Build golems upside-down.",
+	"experimentalGameplay": {
+		"creationOfCustomBiomes": false,
+		"upcomingCreatorFeatures": false,
+		"enableGameTestFramework": false,
+		"educationEdition": false
+	},
+	"bdsProject": false,
+	"packs": {
+		"behaviorPack": "./BP"
+	},
+	"worlds": [
+		"./worlds/*"
+	],
+	"compiler": {
+		"plugins": [
+			"generatorScripts",
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "Gulemm"
+				}
+			]
+		]
+	}
+}
