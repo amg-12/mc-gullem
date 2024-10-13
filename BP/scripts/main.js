@@ -10,8 +10,7 @@ function add(v, x, y, z) {
 
 function attemptSnowGolem(block) {
     const bs = [block, block.above(1), block.above(2)]
-    bs.forEach(b => world.sendMessage(`${b.typeId}`))
-    if ((block.matches("carved_pumpkin") || b.matches("lit_pumpkin"))
+    if ((block.matches("carved_pumpkin") || block.matches("lit_pumpkin"))
         && bs[1].matches("snow")
         && bs[2].matches("snow")) {
         bs.forEach(b => b.setType("air"))
